@@ -9,17 +9,17 @@
 <body class="bg-black text-white overflow-x-hidden">
 
   <!-- Navbar -->
-  <nav>
-    <div class="flex flex-row justify-around w-full items-center absolute gap-[40vw]">
+  <nav class="relative z-50">
+    <div class="flex flex-row justify-around w-full items-center absolute gap-[40vw] pt-4">
       <div>
-        <img   class="h-[5vw] ml-10"  src="https://preview.redd.it/3d-rendered-the-cyberpunk-logo-using-blender-v0-khopj82wqee91.png?width=1080&crop=smart&auto=webp&s=0e62e74ba8b5ef6191228e855079491cfa56f57b" 
-        alt="">
+        <img class="h-[5vw] ml-10" src="https://preview.redd.it/3d-rendered-the-cyberpunk-logo-using-blender-v0-khopj82wqee91.png?width=1080&crop=smart&auto=webp&s=0e62e74ba8b5ef6191228e855079491cfa56f57b" 
+        alt="Cyberpunk Logo">
       </div>
       <div class="flex flex-row gap-10 mr-10">
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Projects</a>
-        <a href="#">Contact</a>
+        <a class="hover:text-blue-400 transition-colors duration-300 cursor-pointer " href="#">Home</a>
+        <a class="hover:text-blue-400 transition-colors duration-300 cursor-pointer " href="#">About</a>
+        <a class="hover:text-blue-400 transition-colors duration-300 cursor-pointer " href="#">Projects</a>
+        <a class="hover:text-blue-400 transition-colors duration-300 cursor-pointer " href="#">Contact</a>
       </div>
     </div>
   </nav>
@@ -27,11 +27,11 @@
   <!-- Main Content -->
   <div class="main w-full pt-16">
     <div class="w-full h-screen relative">
-      <img class="absolute top-1/2 left-1/2 -translate-x-1/2 scale-200 -translate-y-1/2 w-1/3 max-w-lg mix-blend-screen [filter:contrast(150%)_saturate(150%)]" 
+      <img class="absolute top-1/2 left-1/2 -translate-x-1/2 scale-200 -translate-y-1/2 w-1/3 max-w-lg mix-blend-screen [filter:contrast(150%)_saturate(150%)] z-10" 
            src="https://preview.redd.it/3d-rendered-the-cyberpunk-logo-using-blender-v0-khopj82wqee91.png?width=1080&crop=smart&auto=webp&s=0e62e74ba8b5ef6191228e855079491cfa56f57b" 
            alt="Main Image">
-      <div class="w-[27vw] h-[27vw] bg-blue-600 absolute top-1/2 z-[-1] left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full blur-[90px]"></div>
-      <canvas id="canvas" class="w-full h-full"></canvas>
+      <div class="w-[27vw] h-[27vw] bg-blue-600 absolute top-1/2 z-0 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full blur-[90px]"></div>
+      <canvas id="canvas" class="w-full h-full absolute top-0 left-0 z-5"></canvas>
     </div>
     <div class="w-full h-screen bg-[#000000]"></div>
 

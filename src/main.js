@@ -12,19 +12,8 @@ import LocomotiveScroll from 'locomotive-scroll';
 
 const locomotiveScroll = new LocomotiveScroll();
 
+
 const camera = new THREE.PerspectiveCamera(30, window.innerWidth / window.innerHeight, 0.1, 1000);
-
-// Add lighting
-const ambientLight = new THREE.AmbientLight(0xffffff, 0.5);
-scene.add(ambientLight);
-
-const directionalLight = new THREE.DirectionalLight(0xffffff, 1);
-directionalLight.position.set(5, 5, 5);
-scene.add(directionalLight);
-
-const pointLight = new THREE.PointLight(0x00ffff, 1);
-pointLight.position.set(-5, 0, 2);
-scene.add(pointLight);
 
 // Load HDRI environment map
 const rgbeLoader = new RGBELoader();
